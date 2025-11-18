@@ -59,7 +59,7 @@ def temp_status(df):
     """Temperature threshold checking."""
     if df["Temperatura"].max() > 23.5:
         return "hot"
-    elif df["Temperatura"].min() < 22:
+    elif df["Temperatura"].min() < 23:
         return "cold"
     return "normal"
 
