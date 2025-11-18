@@ -57,9 +57,9 @@ def midpoint_timestamp(df):
 
 def temp_status(df):
     """Temperature threshold checking."""
-    if df["Temperatura"].max() > 35:
+    if df["Temperatura"].max() > 22:
         return "hot"
-    elif df["Temperatura"].min() < 10:
+    elif df["Temperatura"].min() < 20:
         return "cold"
     return "normal"
 
